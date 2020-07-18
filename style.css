@@ -1,8 +1,9 @@
 body {
   font-family: "Roboto", sans-serif;
+  overscroll-behavior-y: none;
 }
 .container {
-  max-width: 900px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 .homework-title {
@@ -13,10 +14,19 @@ body {
   margin: 0;
   padding-left: 25px;
 }
-li {
+.homework-list > li {
   font-size: 22px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+.homework-list > li ul {
+  padding-left: 22px;
+}
+li {
+  font-size: 18px;
   margin-bottom: 15px;
   margin-top: 15px;
+  text-transform: capitalize;
 }
 .homework-list__item,
 .homework-list__item:visited {
