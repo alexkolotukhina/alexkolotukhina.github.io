@@ -1,0 +1,44 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.curry-sum {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.curry-sum__title {
+  text-align: center;
+  text-transform: uppercase;
+}
+.curry-sum__main {
+  display: flex;
+  flex-basis: 100%;
+  margin-bottom: 10px;
+}
+.curry-sum__number {
+  display: flex;
+  flex-basis: 50%;
+  flex-direction: column;
+  padding-right: 10px;
+}
+.curry-sum__number + .curry-sum__number {
+  padding-left: 10px;
+  padding-right: 0;
+}
+.curry-sum__result {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.curry-sum__result span {
+  font-weight: 700;
+  font-size: 18px;
+  padding-left: 10px;
+}
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 10px;
+}
