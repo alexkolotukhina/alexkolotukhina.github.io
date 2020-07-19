@@ -1,0 +1,17 @@
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.array-filter__title {
+  text-transform: uppercase;
+}
+
+.array-filter {
+  margin-bottom: 15px;
+}
+
+.array-filter__result span {
+  margin-left: 10px;
+  font-weight: 700;
+}
