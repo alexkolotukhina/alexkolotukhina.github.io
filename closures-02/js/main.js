@@ -8,19 +8,21 @@ let form = document.querySelector(".curry-sum");
 let firstInput = form.querySelector(".first-number");
 let secondInput = form.querySelector(".second-number");
 
-function carry(func) {
-  return function (a) {
-    return function (b) {
-      return func(a, b);
-    };
-  };
-}
+// function carry(func) {
+//   return function (a) {
+//     return function (b) {
+//       return func(a, b);
+//     };
+//   };
+// }
 
-function sum(a, b) {
-  return a + b;
-}
+// function sum(a, b) {
+//   return a + b;
+// }
 
-let carrySum = carry(sum);
+// let carrySum = carry(sum);
+
+let sum = (a) => (b) => a + b;
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -28,7 +30,7 @@ form.addEventListener("submit", function (e) {
   let secondNum = parseInt(secondInput.value);
   let sumResult = document.querySelector(".curry-sum__result span");
 
-  sumResult.innerHTML = carrySum(firstNum)(secondNum);
+  sumResult.innerHTML = sum(firstNum)(secondNum);
   firstInput.value = "";
   secondInput.value = "";
 });
