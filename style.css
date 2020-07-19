@@ -29,12 +29,15 @@ li {
   text-transform: capitalize;
 }
 .homework-list__item,
-.homework-list__item:visited {
+.homework-list__item:visited,
+.repository-link,
+.repository-link:visited {
   text-decoration: none;
   color: #000;
   transition: color 0.3s ease-in-out;
 }
-.homework-list__item:hover {
+.homework-list__item:hover,
+.repository-link:hover {
   cursor: pointer;
   color: rgb(60, 145, 207);
 }
