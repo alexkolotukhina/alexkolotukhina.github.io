@@ -1,0 +1,8 @@
+.out {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.out span {
+  color: yellowgreen;
+  font-style: italic;
+}
