@@ -13,11 +13,13 @@ body {
 .homework-list {
   margin: 0;
   padding-left: 25px;
+  display: flex;
 }
 .homework-list > li {
   font-size: 22px;
   margin-bottom: 30px;
   text-transform: uppercase;
+  flex-basis: 25%;
 }
 .homework-list > li ul {
   padding-left: 22px;
