@@ -14,7 +14,7 @@ let result = document.querySelector(".number-format__result span");
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  let regular = /\(?([0-9]{3})[\)]?[-]?[\s]?([0-9]{3})[-]?[\s]?([0-9]{2})[-]?[\s]?([0-9]{2})/g;
+  let regular = /\(?([0-9]{3})[\)]?[-]?[\s]?[-]?([0-9]{3})[-]?[\s]?[-]?([0-9]{2})[-]?[\s]?[-]?([0-9]{2})/g;
   let phoneVal = input.value;
   let formating = phoneVal.replace(regular, "($1) $2 $3$4");
   result.innerHTML = formating;
