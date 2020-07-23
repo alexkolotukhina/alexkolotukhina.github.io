@@ -1,2 +1,2 @@
 body{color:red}
-h1,h2,h3{color:red}.section .p{color:green}.section .p .span{color:#00f}
+h1,h2,h3{color:red}.section .p{color:green}.section .p .span{color:#00f}@media screen and (min-width:768px){h1,h2,h3{color:#00f}}
