@@ -12,8 +12,9 @@ body {
 }
 .homework-list {
   margin: 0;
-  padding-left: 25px;
+  padding-left: 0;
   display: flex;
+  list-style-position: inside;
 }
 .homework-list > li {
   font-size: 22px;
