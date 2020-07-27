@@ -14,6 +14,7 @@ body {
   margin: 0;
   padding-left: 0;
   display: flex;
+  flex-wrap: wrap;
   list-style-position: inside;
 }
 .homework-list > li {
