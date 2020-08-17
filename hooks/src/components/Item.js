@@ -15,7 +15,7 @@ const Item = (props) => {
           checked={props.item.packed}
           onChange={() =>
             dispatch({
-              type: "toggle",
+              type: "TOGGLE",
               payload: props.item.id,
             })
           }
@@ -30,7 +30,7 @@ const Item = (props) => {
         className="btn btn-secondary btn-sm"
         onClick={() =>
           dispatch({
-            type: "delete",
+            type: "DELETE",
             payload: props.item.id,
           })
         }

@@ -2,19 +2,17 @@ import { generate as id } from "shortid";
 
 export default function (state, action) {
   switch (action.type) {
-    case "add":
+    case "ADD":
       return [{ id: id(), value: action.payload, packed: false }, ...state];
-    case "allUnpacked":
+    case "ALLUNPACKED":
       return state.map((item) =>
         item.packed ? { ...item, packed: false } : item
       );
-    case "toggle":
-      return state.map((item) => {
-        return item.id === action.payload
-          ? { ...item, packed: !item.packed }
-          : item;
-      });
-    case "delete":
+    case "TOGGLE":
+      return state.map((item) =>
+        item.id === action.payload ? { ...item, packed: !item.packed } : item
+      );
+    case "DELETE":
       return state.filter((item) => item.id !== action.payload);
     default:
       return state;

@@ -19,7 +19,7 @@ const App = () => {
   const addItem = useCallback(
     (value) => {
       dispatch({
-        type: "add",
+        type: "ADD",
         payload: value,
       });
     },
@@ -28,7 +28,7 @@ const App = () => {
 
   const makeAllUnpacked = useCallback(() => {
     dispatch({
-      type: "allUnpacked",
+      type: "ALLUNPACKED",
     });
   }, [dispatch]);
 
